@@ -4,15 +4,7 @@ const cipher = {
 }
 export default cipher; 
  //No borrar lo de arriba
-<<<<<<< HEAD
 
- describe ('cipher',() => {
-    it ('should be an object', () => {
-        
-    }) 
- })
-
-=======
 
 //Establecer cuál es la función, qué tengo que hacer, cómo se va a llamar
 function cipher(str) {
@@ -30,5 +22,3 @@ function cipher(str) {
     }
     return nuevoMensaje;
 }
-cipher ("Hola")
->>>>>>> 34dda9b6b946918e76f933cdee7c9b2aea5971b5
