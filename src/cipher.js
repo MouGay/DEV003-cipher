@@ -1,24 +1,25 @@
 
 
 const cipher = {
-}
+
 export default cipher; 
+}
+
+function encode (mensaje,desplazamiento) { // esta función establece los párametros de "codificar"
+    let resultado = ""; //el resultado es el mensaje que esperamos tener al final de la función y es una variable
+
+    for(let i=0;i<mensaje.length;i++){ //este es el loop, necesita 3 elementos = i=0="A", largo del mensaje que va a recorrer y el i++ que significa que añade +1
+
+      if(mensaje.charCodeAt(i)>=65 && mensaje.charCodeAt(i) <=90){ // ASCII A empieza en 65 y Z termina en 90
+         resultado+=String.fromCharCode((mensaje.charCodeAt(i)+ (desplazamiento-65))%26+65); // CharCode y CharCodeAt
+      }else{
+         resultado+=String.fromCharCode(mensaje.charCodeAt(i));
+      }
+    }
+
+    return resultado; 
+
+}
  //No borrar lo de arriba
 
 
-//Establecer cuál es la función, qué tengo que hacer, cómo se va a llamar
-function cipher(str) {
-//Poner nombre a la variable
-    var nuevoMensaje="";
-//Establecer la variable i y el largo de esa variable
-    for(var i=0;i<str.length;i++){
-//Crear una condición para el string usar el charCodeAt y llamar a i
-//Establecer el ASCII 
-        if(string.charCodeAt(i)>=65&&str.charCodeAt(i)<=90){
-            nuevoMensaje+=String.fromCharCode((str.charCodeAt(i)+13-65)%26+65);
-        }else{
-            nuevoMensaje+=String.fromCharCode(str.charCodeAt(i));
-        }
-    }
-    return nuevoMensaje;
-}

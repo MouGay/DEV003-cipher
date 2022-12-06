@@ -2,7 +2,6 @@
 
 //console.log(cipher);
 
-
 //cipher.encode("ABCD", 3)
 //console.log(cipher.encode("ABCD", 3))
 
@@ -44,8 +43,8 @@ function descifrar(){
 
 }
 
-document.getElementById('CifrarMensaje').addEventListener('mousedown', cifrar);
-document.getElementById('DescifrarMensaje').addEventListener('mousedown', cifrar);
+document.getElementById('Cifrar Mensaje').addEventListener('mousedown', cifrar);
+document.getElementById('Descifrar Mensaje').addEventListener('mousedown', descifrar);
  
 
     //OBTENER EL MENSAJE        //GET THE MESSAGE
