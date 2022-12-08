@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Tu mensaje secreto</title>
+    <link rel="stylesheet" href="style.css" />
+   
+
+  <body>
+    <img src="Escuela1.jpg">
+    <h1>Bienvenido a "Tu mensaje en secreto"</h1>
+    <h2>El mejor lugar para contar secretos entre tus amigos</h2>
+
+    ¿Qué quieres decir?
+
+    <br> </br>
+
+    <input text
+    id="mensajeADescifrar"
+    placeholder="Escribe tu mensaje"
+    />
+
+    <br> </br>
+
+    Desplazamiento del mensaje: 
+
+    <br> </br>
+    <input type = "number" min="1" max="50" id="Desplazamiento"></input number>
+
+    <br> </br>
+
+    Ahora codifica tu mensaje aquí:
+
+    <br> </br>
+
+    <button id="Cifrar Mensaje" 
+    onclick="cifrar()">Cifra Mensaje</button>
+  
+    <br> </br>
+    
+    Verifica que tu mensaje es correcto:
+
+    <br> </br>
+
+    <input text
+    name="mensajeNuevo"
+    id="cifrado"
+    placeholder="El mensaje secreto"/>
+
+    <br> </br>
+
+    Pulsa aquí para descrifrar tu mensaje:
+
+    <br> </br>
+    
+    <button id="Descifrar Mensaje" 
+    onclick="descifrar()">Descifrar Mensaje</button>
+
+    <br> </br>
+
+    El mensaje secreto es:
+
+    <br> </br>
+
+    <input text
+    id="descifrado"
+    placeholder="Mensaje Descifrado"/>
+    
+  
+    <div id="root"></div>
+   <!--<script src="index.js" type="text/javascript"></script>-->
+    <script src="index.js" type="module"></script>
+  
+  </body>
+</html>
