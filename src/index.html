@@ -14,54 +14,53 @@
 
     ¿Qué quieres decir?
 
-    <br> </br>
+    <br>
 
     <input text
     id="mensajeADescifrar"
     placeholder="Escribe tu mensaje"
     />
 
-    <br> </br>
+    <br>
 
     Desplazamiento del mensaje: 
 
-    <br> </br>
-    <input type = "number" min="1" max="50" id="Desplazamiento"></input number>
-
-    <br> </br>
+    <br>
+    <input id="desplazamiento"
+		type="number"
+		min="1"
+		max="33">
+		
+    <br>
 
     Ahora codifica tu mensaje aquí:
 
-    <br> </br>
+    <br>
 
-    <button id="Cifrar Mensaje" 
-    onclick="cifrar()">Cifra Mensaje</button>
+    <button id="cifrarMensaje">Cifra Mensaje</button>
   
-    <br> </br>
+    <br> 
     
     Verifica que tu mensaje es correcto:
 
-    <br> </br>
+    <br>
 
     <input text
-    name="mensajeNuevo"
-    id="cifrado"
-    placeholder="El mensaje secreto"/>
+    name="mensajeNuevo" id="cifrado" placeholder="El mensaje secreto">
 
-    <br> </br>
+    <br> 
 
     Pulsa aquí para descrifrar tu mensaje:
 
-    <br> </br>
+    <br> 
     
-    <button id="Descifrar Mensaje" 
-    onclick="descifrar()">Descifrar Mensaje</button>
+    <button id="descifrarMensaje">Descifrar Mensaje</button>
 
-    <br> </br>
+    <br> 
 
     El mensaje secreto es:
 
-    <br> </br>
+    <br> 
 
     <input text
     id="descifrado"
@@ -73,4 +72,5 @@
     <script src="index.js" type="module"></script>
   
   </body>
+  </head>
 </html>
